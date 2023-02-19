@@ -40,4 +40,24 @@ class Magazine
         end
     end
 
+    def article_titles
+        articles = Article.all
+        articles.collect do |articles|
+            if self.name == articles.magazine.name
+                articles.title
+            end
+        end
+    end
+
+    def contributing_authors
+        contributing_authors = []
+        authors = Article.all
+        authors.collect do |author|
+            if self.name == author.magazine.name
+                contributing_authors << author.author
+            end
+        end
+        contributing_authors.select {|e| contributing_authors.count(e) > 2}.uniq
+    end
+
 end
