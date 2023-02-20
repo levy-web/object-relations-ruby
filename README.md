@@ -29,8 +29,6 @@ In order to use this repo you need to have the following installed:
 
 To use this repo on your machine requires some simple steps
 
-### Alternative One
-
 - Open a terminal / command line interface on your computer
 - Clone the repo by using the following:
 
