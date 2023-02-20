@@ -12,7 +12,7 @@ magazine1 = Magazine.new("magazine1", "business")
 magazine2 = Magazine.new("magazine2", "politics")
 
 # article instances
-hood1 = Atricle.new(author1, magazine1, "money, money, money")
-hood2 = Atricle.new(author2, magazine2, "music, music, music")
+hood1 = Article.new(author1, magazine1, "money, money, money")
+hood2 = Article.new(author2, magazine2, "music, music, music")
 
 binding.pry
