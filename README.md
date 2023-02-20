@@ -62,7 +62,7 @@ Running the application is very straight forward. You can use the following step
 
       ruby config/run
 
-- ![screenshot](https://github.com/[levy-web]/[object-relations-ruby]/blob/[main]/Screenshot.png)
+- ![screenshot](https://github.com/levy-web/object-relations-ruby/blob/[main]/Screenshot.png)
 
 # Authors
 This project was contributed to by:
