@@ -62,7 +62,11 @@ Running the application is very straight forward. You can use the following step
 
       ruby config/run
 
-- ![screenshot](https://github.com/levy-web/object-relations-ruby/blob/main/Screenshot.png)
+- pry prompt will pop where you can insect the cone by creating an author, magazine and an article and retrieve their data using getters.
+
+- use the screenshot sample below to create instances
+
+![screenshot](https://github.com/levy-web/object-relations-ruby/blob/main/Screenshot.png)
 
 # Authors
 This project was contributed to by:
