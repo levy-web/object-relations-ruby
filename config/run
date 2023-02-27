@@ -4,15 +4,43 @@ require_relative '../lib/auuthor'
 require_relative '../lib/article'
 
 #author instances
-author1 = Author.new("name1")
-author2 = Author.new("name2")
+puts "Enter author name:"
+author1 = gets.chomp
+author1_name = Author.new(author1)
+
+puts "you have entered the following author #{author1_name.name}"
+
 
 #magazine instances
-magazine1 = Magazine.new("magazine1", "business")
-magazine2 = Magazine.new("magazine2", "politics")
+puts "Enter magazine name:"
+magazine_name = gets.chomp
+puts "Enter a magazine category"
+magazine_category = gets.chomp
+magazine1 = Magazine.new(magazine_name, magazine_category)
+
+puts "you have entered the following magazine: name: #{magazine1.name} category: #{magazine1.category}"
+
+
 
 # article instances
-hood1 = Article.new(author1, magazine1, "money, money, money")
-hood2 = Article.new(author2, magazine2, "music, music, music")
+puts "Enter an author name to create an article:"
+author2 = gets.chomp
+author2_name = Author.new(author2)
 
-binding.pry
+puts "Enter magazine name to the article:"
+magazine_name2 = gets.chomp
+puts "Enter magazine category to the article"
+magazine_category2 = gets.chomp
+magazine2 = Magazine.new(magazine_name2, magazine_category2)
+puts "Enter title to the article"
+article_title = gets.chomp
+
+article1 = Article.new(author2_name, magazine2, article_title)
+
+puts "below are your magazines"
+
+pp Magazine.all
+
+puts "below are your articles"
+
+pp Article.all
